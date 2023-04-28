@@ -249,7 +249,7 @@
         <!--Профиль-->
         <scene sceneID="Cot-Nl-XJB">
             <objects>
-                <viewController id="PLU-yz-rC6" sceneMemberID="viewController">
+                <viewController id="PLU-yz-rC6" customClass="ProfileViewController" customModule="PetProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQx-MI-OHd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -445,6 +445,9 @@
                                 <state key="normal" title="Выход ">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonLogOutTapped" destination="PLU-yz-rC6" eventType="touchUpInside" id="rVX-Ia-dFr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="glo-if-Jy8"/>
@@ -1233,7 +1236,7 @@
         <!--Navigation Controller-->
         <scene sceneID="3Y7-rD-TUS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fq3-uG-IJM" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navVC" automaticallyAdjustsScrollViewInsets="NO" id="Fq3-uG-IJM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MxA-XW-XVW">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>

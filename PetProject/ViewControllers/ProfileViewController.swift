@@ -15,6 +15,7 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func buttonLogOutTapped() {
         let welcomeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navVC")
         
