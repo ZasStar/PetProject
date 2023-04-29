@@ -7,12 +7,11 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+final class AboutUsViewController: UIViewController {
     
     @IBOutlet var zakiImageView: UIImageView!
     @IBOutlet var alexImageView: UIImageView!
     @IBOutlet var nickImageView: UIImageView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +26,4 @@ class AboutUsViewController: UIViewController {
         nickImageView.layer.cornerRadius = nickImageView.bounds.width / 2
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
