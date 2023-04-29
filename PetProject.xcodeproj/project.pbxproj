@@ -17,6 +17,7 @@
 		FA8A268F29FBC11200CD077F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8A268D29FBC11200CD077F /* Main.storyboard */; };
 		FA8A269129FBC11300CD077F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8A269029FBC11300CD077F /* Assets.xcassets */; };
 		FA8A269429FBC11300CD077F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8A269229FBC11300CD077F /* LaunchScreen.storyboard */; };
+		FAD8F64D29FD61F30090620E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8F64C29FD61F30090620E /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA8A269029FBC11300CD077F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8A269329FBC11300CD077F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA8A269529FBC11400CD077F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD8F64C29FD61F30090620E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				FA8A269B29FBC13F00CD077F /* APP */,
 				FA8A269C29FBC14E00CD077F /* ViewControllers */,
+				FAD8F64B29FD60570090620E /* Model */,
 				FA8A269D29FBC17100CD077F /* Storyboards */,
 				FA8A269029FBC11300CD077F /* Assets.xcassets */,
 				35BCBAD929FCFFB800800966 /* Models */,
@@ -109,6 +112,14 @@
 				FA8A269229FBC11300CD077F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FAD8F64B29FD60570090620E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAD8F64C29FD61F30090620E /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35E9D7A229FBE9CE00C2FBC9 /* AboutUsViewController.swift in Sources */,
+				FAD8F64D29FD61F30090620E /* Question.swift in Sources */,
 				FA8A268829FBC11200CD077F /* AppDelegate.swift in Sources */,
 				35BCBAD629FCFD2400800966 /* MainViewController.swift in Sources */,
 				35BCBADB29FD099700800966 /* NewsDetailsViewController.swift in Sources */,
