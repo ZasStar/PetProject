@@ -17,6 +17,7 @@ class PetDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         petPhotoImageView.image = UIImage(named: pet.photo)
+        
     }
 }
 

@@ -41,6 +41,7 @@ extension PetTableViewController {
         content.image = UIImage(named: pet.photo)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         return cell
+        
     }
 
 }

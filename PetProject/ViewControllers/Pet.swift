@@ -14,6 +14,7 @@ struct Pet {
         [
             Pet(nickname: "Шарик", breed: "Сибирский", photo: "sharik"),
             Pet(nickname: "Барсик", breed: "Британский", photo: "sharik")
+            
         ]
     }
 }
