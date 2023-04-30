@@ -10,6 +10,7 @@ import UIKit
 final class MainViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var petPhotoView: UIImageView!
     
     private var newsList = News.getNews()
     
@@ -17,6 +18,8 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.rowHeight = 80
+        petPhotoView.layer.cornerRadius = petPhotoView.bounds.height / 2
+        petPhotoView.image = UIImage(named: "Sharik")
         
     }
 

@@ -18,6 +18,8 @@
 		FA8A269129FBC11300CD077F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8A269029FBC11300CD077F /* Assets.xcassets */; };
 		FA8A269429FBC11300CD077F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8A269229FBC11300CD077F /* LaunchScreen.storyboard */; };
 		FAD8F64D29FD61F30090620E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8F64C29FD61F30090620E /* Question.swift */; };
+		FAD8F64F29FE22200090620E /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8F64E29FE22200090620E /* QuizViewController.swift */; };
+		FAD8F65129FE24770090620E /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8F65029FE24770090620E /* QuizResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FA8A269329FBC11300CD077F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA8A269529FBC11400CD077F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD8F64C29FD61F30090620E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FAD8F64E29FE22200090620E /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		FAD8F65029FE24770090620E /* QuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				35E9D7A129FBE9CE00C2FBC9 /* AboutUsViewController.swift */,
 				35BCBADA29FD099700800966 /* NewsDetailsViewController.swift */,
 				35BCBAD529FCFD2400800966 /* MainViewController.swift */,
+				FAD8F64E29FE22200090620E /* QuizViewController.swift */,
+				FAD8F65029FE24770090620E /* QuizResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,6 +197,8 @@
 				35BCBAD629FCFD2400800966 /* MainViewController.swift in Sources */,
 				35BCBADB29FD099700800966 /* NewsDetailsViewController.swift in Sources */,
 				35BCBAD829FCFFA900800966 /* News.swift in Sources */,
+				FAD8F65129FE24770090620E /* QuizResultViewController.swift in Sources */,
+				FAD8F64F29FE22200090620E /* QuizViewController.swift in Sources */,
 				35E9D7A029FBE9BB00C2FBC9 /* ProfileViewController.swift in Sources */,
 				FA8A268A29FBC11200CD077F /* SceneDelegate.swift in Sources */,
 			);
