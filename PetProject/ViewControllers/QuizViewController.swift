@@ -32,23 +32,20 @@ final class QuizViewController: UIViewController {
     private var currentAnswers: [Answer] {
         questions[questionIndex].answers
     }
-
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-          
+        
         let answerCount = Float(currentAnswers.count - 1)
         rangedSlider.maximumValue = answerCount
         rangedSlider.value = answerCount / 2
         
         updateUI()
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resultVC = segue.destination as? QuizResultViewController else { return }
         resultVC.answers = answersChosen
     }
-    
     //MARK: - IBAction
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
@@ -62,7 +59,6 @@ final class QuizViewController: UIViewController {
                 answersChosen.append(answer)
             }
         }
-        
         nextQuestion()
     }
     @IBAction func rangedAnswerButtonPressed() {
@@ -70,31 +66,19 @@ final class QuizViewController: UIViewController {
         answersChosen.append(currentAnswers[index])
         nextQuestion()
     }
-    
-   
 }
-
 //MARK: - Extention
-
 private extension QuizViewController {
     func updateUI() {
-        
         for stackView in [singleStackView, multipleStackView, rangedStackView] {
             stackView?.isHidden = true
         }
-        
         let currentQuestion = questions[questionIndex]
-        
         questionLabel.text = currentQuestion.title
-        
         let totalProgress  = Float(questionIndex) / Float(questions.count)
-        
         questionProgressView.setProgress(totalProgress, animated: true)
-        
         title = "Вопрос № \(questionIndex + 1) из \(questions.count) "
-        
         showCurrentAnswers(for: currentQuestion.type)
-        
     }
     
     func showCurrentAnswers(for type: ResponseType) {
@@ -111,7 +95,6 @@ private extension QuizViewController {
             button.setTitle(answer.title, for: .normal)
         }
     }
-    
     func showMultipleStackView(with answers: [Answer]) {
         multipleStackView.isHidden.toggle()
         
@@ -119,14 +102,12 @@ private extension QuizViewController {
             label.text = answer.title
         }
     }
-    
     func showRangedStackView(with answers: [Answer]) {
         rangedStackView.isHidden.toggle()
         
         rangedLabels.first?.text = answers.first?.title
         rangedLabels.last?.text = answers.last?.title
     }
-    
     func nextQuestion() {
         questionIndex += 1
         
@@ -134,9 +115,7 @@ private extension QuizViewController {
             updateUI()
             return
         }
-        
         performSegue(withIdentifier: "showResult", sender: nil)
     }
-
 }
 

@@ -8,7 +8,7 @@
 import UIKit
 
 final class MainViewController: UIViewController {
-
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var petPhotoView: UIImageView!
     
@@ -22,8 +22,8 @@ final class MainViewController: UIViewController {
         petPhotoView.image = UIImage(named: "Sharik")
         
     }
-
-
+    
+    
 }
 // MARK: - News Table View Controller
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {

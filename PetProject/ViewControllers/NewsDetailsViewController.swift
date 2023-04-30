@@ -8,7 +8,7 @@
 import UIKit
 
 final class NewsDetailsViewController: UIViewController {
-
+    
     @IBOutlet var newsImageView: UIImageView!
     @IBOutlet var newsTitleLabel: UILabel!
     @IBOutlet var newsTextLabel: UILabel!
@@ -24,5 +24,5 @@ final class NewsDetailsViewController: UIViewController {
         newsTextLabel.backgroundColor = .white
         
     }
-
+    
 }
